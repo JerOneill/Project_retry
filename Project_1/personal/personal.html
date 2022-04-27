@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        h1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-variant: small-caps;
+        color: rgb(43, 51, 56);
+        text-align: center;}
+
+        h2 {background-color: aliceblue;}
+
+
+        p {text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(43, 51, 56);}
+
+        div {text-align: center;}
+
+        img {align-items: center;}
+
+        footer {text-align: right;}
+
+        body {background-color: rgb(221, 231, 240);
+        margin: 0;}
+
+       
+/*headers and links*/
+         header {font-size: medium;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-size: cover;
+                padding: 15px; }
+                
+        nav ul {list-style-type: none;
+            margin: 0;
+            padding: 0; 
+            display: flex;
+            justify-content: center;}
+
+        nav ul li {text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        nav ul li a {
+             display: flex;
+             border-style: outset;
+            padding: .5em 1em;
+            margin: .5em;}
+        
+        a:link {color: rgb(43, 51, 56);}
+
+        a:visited {color: rgb(65, 98, 121);}
+
+        a:hover {color: cornflowerblue;}
+
+        a:active {color: rgb(21, 21, 167);}
+
+        /*footer*/
+
+        footer {background-color: rgb(144, 158, 172);
+        justify-content: center;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+        padding: 5px;
+        margin-top: 30px;
+        position: relative;
+        /*border: 1px solid;
+        border-color: rgb(0, 0, 0);
+        border-style:*/}
+
+        .p1 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             grid-area: first;
+            grid-column: 1;}
+     
+
+        .p2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            grid-area: second;
+            margin-left: 30px;
+            margin-right: 30px;
+        grid-column: 2;}
+
+        .p3 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            grid-area: third;
+        grid-column: 3;}
+
+        .foot {display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-areas: 'first' 'second' 'third';
+        }
+
+        /*grids*/
+
+        .grid-container {display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content: space-evenly space-between end;
+        align-items: center;
+        margin: 0px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-areas: 'img1' 'img2' 'img3' 'img4';}
+
+        #img1 {grid-area: img1;
+        justify-content: center;
+        position: relative;}
+
+        #img2 {grid-area: img2;
+        justify-content: center;
+        position: relative;}
+
+        #img3 {grid-area: img3;
+        justify-content: center;
+        position: relative;}
+
+        #img4 {grid-area: img4;
+        justify-content: center;
+        position: relative;}
+
+        
+
+        ul {list-style-type: none;}
+
+        </style>
+        <meta charset="utf-8">
+        <title>Personal_Works</title>
+    </head>
+    <header>
+         <nav>
+             <ul>
+          
+        <li><a href="../index.html">Home</a></li>       
+        <li><a href="../school/Class_redone.html">Classroom</a></li>       
+        <li><a href="../personal/personal.html">Personal</a></li>     
+        <li><a href="../Inspiration/inspiration.html">Inspirations</a></li>     
+        <li><a href="../Resume/Resume.html">Resume</a></li>  
+    </ul>
+</nav></header>
+    <body >
+        <h1>Personal Works</h1>
+        <p>Works personally done for the sake of practive &#38; improvement</p>
+       
+        <ul>
+    <li><div class="img1"><h2>Photo taken and edited in Photoshop</h2>
+ <img src="Chris_4 copy.jpg" alt="Photo of Musician" width="500" height="650">
+ <p>A photo taken at a small concert of an musician, practice on emphasis and lighting</p></div></li>
+    
+    <li><div class="img2"><h2>Digital drawing integrated with Adobe Illustrator</h2>
+        <img src="Robot_Dude.jpg" alt="Drawing with green shapes" width="500" height="500">
+  <p>First Illustration done and using Illustrator for simple clothing and background</p></div></li>
+ 
+    <li><div class="img3"><h2>Digital Drawing in Photoshop</h2>
+        <img src="Tokyo_revengers.jpg" alt="Drawing of a fictional character" width="500" height="500">
+    <p>Digital Drawing of an already existing character using brushes provided by Photoshop</p></div></li>
+
+   </ul>
+    <div class="Foot"><footer> 
+            
+        <div class="p1"><img src="../Resume/Logos/facebook.png" alt="Facebook" width="25" height="25">Jermine O'Neill</div>
+
+        <div class="p2"><img src="../Resume/Logos/instagram.png" alt="Instagram" height="25" width="25">&#64;Jer_FakeAccount</div>
+
+        <div class="p3"><img src="../Resume/Logos/tumblr-logo.png" alt="tumblr" width="25" height="25">&#64;Jer_FakeAccount</div>
+
+    </div>
+    </footer>
+
+</body>
+</html>

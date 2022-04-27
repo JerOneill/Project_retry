@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style> 
+@import url(Style1.css);
+    </style>
+        <meta charset="utf-8">
+
+        <title>O'Neill Studio</title>
+
+        
+   
+    </head>
+<body> 
+
+    <script>
+        function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+<nav><header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<img class="logo" src="Logos/ON1.png" alt="background logo">
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="school/Class_redone.html">Photography</a>
+  <a href="personal/Personal_Redone.html">Photoshop</a>
+  <a href="Inspiration/inspiration_redone.html">Inspiration</a>
+  <a href="Resume/other.html">Other</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</header>  
+</nav>
+
+    <div class="hero-image">
+        <div class="hero-text">
+          <h2>I am Jermine O'Neill</h2>
+          <p>this is my portfolio</p>
+        </div>
+    </div>
+
+        <br>
+
+        <img id="myImg" src="Me.jpg" alt="Self-Portrait" style="width: 100%;max-width: 500px;" >
+
+        <div id="myModal" class="modal">
+
+            <span class="close">&times;</span>
+
+            <img class="modal-content" src="Me.jpg" alt="Self-Portrait" id="img01">
+
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            
+    var modal = document.getElementById("myModal");
+
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+        </script>
+        
+      
+
+        
+
+            <div class="grid-container">
+                 <div class="about"><h2>About Me</h2></div>
+                 <div class="sub"><p>I was born in Guayama, Puerto Rico and have been raised there and here in Florida.
+                    I've always had a love for art, especially since my mom strived to be an artist. I have a specialty in traditional work like graphite and charcoal drawings, although not much will be shown here.</p>
+                    <div class="sub"><p>I am an artist who wants to try every single of art type at least once.<br>This is meant to be portfolio of sorts to showcase my works as they better and grow. </p></div>
+
+                </div>
+                </div>
+
+            <ul class="list">
+
+                <li><a href="school/Class_redone.html"><img src="logos/camera.png" alt="camera" width="50" height="50"><br>Photography</a></li>
+
+                <li><a href="personal/Personal_Redone.html"><img src="logos/canvas.png" alt="canvas" width="50" height="50"><br>Photoshop</a></li>
+
+                <li><a href="Inspiration/inspiration_redone.html"><img src="logos/webinar.png" alt="webinar" width="50" height="50"><br>Inspirations</a></li>
+
+                <li><a href="Resume/Other.html"><img src="logos/resume.png" alt="resume" width="50" height="50"><br>Other</a></li>
+
+            </ul>
+
+            
+        <footer> 
+            
+            <div class="p1"><img src="Resume/Logos/facebook.png" alt="Facebook" width="25" height="25"><br>Jermine O'Neill</div>
+
+            <div class="p2"><img src="Resume/Logos/instagram.png" alt="Instagram" height="25" width="25"><br>&#64;Jer_Oneill</div>
+
+            <div class="p3"><img src="Resume/Logos/tumblr-logo.png" alt="tumblr" width="25" height="25"><br>&#64;Jer_Oneill</div>
+  
+           
+        </footer>    
+    </body>
+</html>

@@ -1,0 +1,387 @@
+h1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    color: rgb(43, 51, 56);
+    text-align: center;
+    }
+
+
+    p {text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+color: rgb(43, 51, 56);}
+
+    div {text-align: center;}
+
+    img {align-items: center;
+    width: 45%;
+    min-width: 400px;
+    max-width: 600px;
+    height: auto;}
+
+    footer {text-align: right;}
+
+    body {background-color: rgb(221, 231, 240);
+    margin: 0;}
+
+    h2 {text-align: center;
+        background-color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-transform: capitalize;
+        color: rgb(43, 51, 56);
+        letter-spacing: 1.25px;
+    }
+/*Didn't use
+    h3 {
+        text-align: center;
+        background-color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-transform: capitalize;
+        color: rgb(43, 51, 56);
+        letter-spacing: 1.25px;
+    }
+*/
+   
+/*headers and links*/
+
+.logo {margin-left: auto;
+  margin-right: auto;
+  display: block;
+  min-width: 200px !important;
+  max-width: 320px !important;
+/*background-color: blue;*/}
+
+
+header {font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-size: cover;
+  padding: 15px; }
+
+nav ul {text-decoration: none;
+list-style: none;
+list-style-type: none;
+margin: 0;
+padding: 0; 
+display: flex;
+justify-content: center;}
+
+nav ul li {text-transform: uppercase;
+letter-spacing: 5px;
+}
+
+nav ul li a {
+display: flex;
+border-style: outset;
+padding: .5em 1em;
+margin: .5em;}
+
+a:link {color: rgb(43, 51, 56);
+text-decoration: none;}
+
+a:visited {text-decoration: none;}
+
+/*
+I don't know yet, If I want this
+
+a:visited {color: rgb(65, 98, 121);} 
+
+*/
+
+a:hover {color: cornflowerblue;
+text-decoration: underline;}
+
+a:active {color: rgb(21, 21, 167);}
+
+/*then again, not being used, but I'll live it on just in case*/
+.list {margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  border: 3px solid;
+  border-style: inset ;}
+
+  ul.list {
+      justify-content: center;
+      text-align: center;
+  }
+
+  ul.list > li {
+      display: inline-block;
+      padding: 10px;
+      text-align: center;
+      justify-content: center;
+  }
+
+  ul.list > li:hover {
+      background-color: aliceblue;
+  }
+
+  ul.list > li:active {
+      color: rgb(21, 21, 167);
+  }
+
+  ul.list > li > a {
+      color: rgb(43, 51, 56);
+      text-decoration: none;
+  }
+
+
+    /*footer*/
+
+    /*Removing this made the footer work, don't use*/
+
+    /*.foot {display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 'first' 'second' 'third';
+    }*/
+
+    footer {background-color: rgb(144, 158, 172);
+    justify-content: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+    position: relative;}
+    /*border: 1px solid;
+    border-color: rgb(0, 0, 0);
+    border-style:}*/
+
+    /*to not use internal styling and so your logos don't explode in size*/
+
+    .footLogo1 {width: 25px;
+      max-width: 25px;
+      min-width: 25px;
+    height: 25px;}
+
+    .footLogo2 {width: 25px;
+      max-width: 25px;
+      min-width: 25px;
+    height: 25px;}
+
+    .footLogo3 {width: 25px;
+      max-width: 25px;
+      min-width: 25px;
+    height: 25px;}
+    
+    /*THIS ISN'T WORKING*/
+    /*footer {background-color: rgb(144, 158, 172);
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;}*/
+
+    .p1 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-area: first;
+    grid-column: 1;
+   text-transform: uppercase;
+   font-size: 75%;}
+
+
+   .p2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-area: second;
+    margin-left: 30px;
+    margin-right: 30px;
+   grid-column: 2;
+   text-transform: uppercase;
+   font-size: 75%;}
+
+   .p3 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   grid-area: third;
+   grid-column: 3;
+   text-transform: uppercase;
+   font-size: 75%;} 
+
+    
+    /*grids*/
+
+    .grid-container {display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas: 'img1' 'img2' 'img3' 'img4';}
+
+    .img1 {grid-area: img1;
+    justify-content: center;
+    position: relative;}
+
+    .img2 {grid-area: img2;
+    justify-content: center;
+    position: relative;}
+
+    .img3 {grid-area: img3;
+    justify-content: center;
+    position: relative;}
+
+    .img4 {grid-area: img4;
+    justify-content: center;
+    position: relative;}
+
+    .grid-container {display: inline;}
+
+    ul {list-style-type: none;
+    }
+
+    /*Just checking something out in W3 (images were too small)
+ 
+    div.gallery {
+  max-width: 100%;
+  height: auto;
+
+      }
+      */
+    
+      
+    /*div.gallery img {
+    width: 100%;
+    height: auto;
+      }*/
+
+    /* stopped liking itdiv.gallery:hover {
+    border: 1px inset rgb(43, 51, 56);
+    }
+*/
+    div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(43, 51, 56);
+    }
+
+    .gallery {
+      width: auto;
+      height: auto;
+    }
+
+    /*For the Inspiration Page only*/
+    .inspo {
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(43, 51, 56);
+    }
+
+    iframe {width: 560px;
+    height: 315px;}
+
+    /*another w3 thing for the other section*/
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      .column {
+        flex: 50%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        gap: 15px;
+        padding: 5px;
+      }
+      /*NEW NAVBAR BABYYYY!!!*/
+      .topnav {
+        background-color: rgb(218, 248, 248);
+        overflow: hidden;
+      }
+
+      nav ul li {text-transform: uppercase;
+                  letter-spacing: 5px;
+              }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+     
+      .topnav a.active {
+        background-color: rgb(43, 51, 56);
+        color: white;
+      }
+    
+      .topnav .icon {
+        display: none;
+      }
+      @media screen and (max-width: 868px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      @media screen and (max-width: 868px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        div.desc {font-size: large;}
+        
+        .logo {max-width: 200px !important;
+          min-width: auto !important;
+        /*background-color: red;*/}
+      }
+      
+
+      @media screen and (max-width: 545px) {
+        #myImg {margin-left: 10px;
+        margin-right: 10px;
+        }
+        footer {padding: 10px;
+    font-size: medium;}
+
+        .list {padding: 5px;}
+
+        h2 {letter-spacing: .75px;
+        text-size-adjust: auto;}
+
+        div.desc {font-size: larger;}
+
+        .logo {max-width: 175px !important;
+        min-width: auto !important;
+        /*background-color: aqua;*/}
+      }
+
+      @media screen and (max-width: 625px) {
+        iframe {height: 250px;
+          width: 450px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        iframe {height: 200px;
+          width: 375px;}
+      }
+
+
+
+    
